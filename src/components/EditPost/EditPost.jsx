@@ -48,7 +48,7 @@ const EditPost = () => {
 		setIsIconLoading(true);
 
 		await authAxios
-			.put(`/posts/${id}/likepost`, post)
+			.put(`/posts/${id}`, post)
 			.then(function(response) {
 				if (response) {
 					// localStorage.setItem('task', JSON.stringify(response.data.results));
