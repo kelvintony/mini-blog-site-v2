@@ -29,7 +29,7 @@ const Register = () => {
 			.post('/user/signup', formData)
 			.then(function(response) {
 				if (response) {
-					// localStorage.setItem('task', JSON.stringify(response.data.results));
+					// localStorage.setItem('task', JSON.stringify(response.data));
 					setisLoading(false);
 					alert('signup succefully');
 					console.log(response.data.result);
